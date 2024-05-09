@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SVG Path Text Follow</title>
+</head>
+<body>
+    <div id="main">
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 400">
+                <path id="curve"
+                    d="M77.57847595214844,247.53363037109375C100.51419982910156,226.27204752604166,158.0926688639323,135.8086767578125,200.44842529296875,133.63229370117188C242.8041817220052,131.45591064453126,253.92527018229165,235.5396083577474,304.48431396484375,235.8744354248047C355.0433577473958,236.20926249186198,415.3841516113281,130.73841695149738,471.3004455566406,135.42601013183594C527.2167395019532,140.1136033121745,579.2586059570312,237.54857584635417,604.035888671875,260.9865417480469"
+                    fill="none" stroke-width="1" stroke="black" stroke-linecap="round"
+                    transform="matrix(1.2762815625000004,0,0,1.2762815625000004,-94.15873873252394,-54.508304283461655)">
+                </path>
+                <text text-anchor="start">
+                    <textPath class="text__path" href="#curve" startOffset="0%">
+                        Experience wave with every curve.
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
